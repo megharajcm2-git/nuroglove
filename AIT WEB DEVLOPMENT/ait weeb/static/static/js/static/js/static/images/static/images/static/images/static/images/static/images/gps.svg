@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <circle cx="100" cy="100" r="40" fill="none" stroke="#0dcaf0" stroke-width="8" />
+  <circle cx="100" cy="100" r="15" fill="#0dcaf0" />
+  <path d="M100,60 L100,40" stroke="#0dcaf0" stroke-width="6" stroke-linecap="round" />
+  <path d="M100,160 L100,140" stroke="#0dcaf0" stroke-width="6" stroke-linecap="round" />
+  <path d="M60,100 L40,100" stroke="#0dcaf0" stroke-width="6" stroke-linecap="round" />
+  <path d="M160,100 L140,100" stroke="#0dcaf0" stroke-width="6" stroke-linecap="round" />
+  <path d="M70,70 L55,55" stroke="#0dcaf0" stroke-width="6" stroke-linecap="round" />
+  <path d="M145,145 L130,130" stroke="#0dcaf0" stroke-width="6" stroke-linecap="round" />
+  <path d="M70,130 L55,145" stroke="#0dcaf0" stroke-width="6" stroke-linecap="round" />
+  <path d="M145,55 L130,70" stroke="#0dcaf0" stroke-width="6" stroke-linecap="round" />
+  <circle cx="100" cy="100" r="5" fill="#dc3545" class="gps-ping" />
+</svg>

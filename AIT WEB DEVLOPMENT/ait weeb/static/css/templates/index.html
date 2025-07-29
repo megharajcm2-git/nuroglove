@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEUROGLOVE - AI-Powered Smart Glove</title>
+    <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.replit.com/agent/bootstrap-agent-dark-theme.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="aiglove.png" alt="NeuroGlove width="40" height="40" viewBox="0 0 100 100">
+
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="var(--bs-info)" stroke-width="8"></circle>
+                    <path d="M30,50 Q50,20 70,50" stroke="var(--bs-info)" stroke-width="8" fill="none"></path>
+                    <circle cx="50" cy="50" r="10" fill="var(--bs-info)"></circle>
+                </svg>
+                <span class="fw-bold">NEUROGLOVE</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#users">User Groups</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#demo">Demo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">NEUROGLOVE</h1>
+                    <p class="lead mb-4">An advanced AI-powered smart glove designed to enhance the lives of individuals with special needs.</p>
+                    <div class="hero-features">
+                        <span class="badge rounded-pill text-bg-info mb-2 me-2">Gesture Control</span>
+                        <span class="badge rounded-pill text-bg-info mb-2 me-2">Health Monitoring</span>
+                        <span class="badge rounded-pill text-bg-info mb-2 me-2">GPS Tracking</span>
+                        <span class="badge rounded-pill text-bg-info mb-2 me-2">Home Automation</span>
+                        <span class="badge rounded-pill text-bg-info mb-2 me-2">AI Voice Generator</span>
+                    </div>
+                    <div class="mt-4">
+                        <a href="#features" class="btn btn-info me-3">Learn More</a>
+                        <a href="#demo" class="btn btn-outline-light">See Demo</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0">
+                    <div class="glove-animation">
+                        <img src="aiglove.png" alt="NeuroGlove width="40" height="400" viewBox="0 0 100 100" >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="display-5 fw-bold">Key Features</h2>
+                <p class="lead">Discover how NEUROGLOVE empowers users with cutting-edge technology</p>
+            </div>
+            <div class="row g-4">
+                <!-- Gesture Control -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card card h-100 border-0">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mb-4">
+                                <svg width="80" height="80" viewBox="0 0 200 200" class="feature-svg">
+                                    <path d="M100,40 C60,40 50,100 50,150" stroke="var(--bs-info)" stroke-width="8" fill="none" stroke-linecap="round" class="gesture-path" />
+                                    <path d="M100,40 C140,40 150,100 150,150" stroke="var(--bs-info)" stroke-width="8" fill="none" stroke-linecap="round" class="gesture-path" />
+                                    <circle cx="100" cy="40" r="20" fill="var(--bs-info)" />
+                                    <circle cx="50" cy="150" r="15" fill="var(--bs-info)" />
+                                    <circle cx="150" cy="150" r="15" fill="var(--bs-info)" />
+                                </svg>
+                            </div>
+                            <h3 class="card-title">Gesture Control</h3>
+                            <p class="card-text">Intuitive hand gestures translate into digital commands, allowing users to control devices with natural movements.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Health Monitoring -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card card h-100 border-0">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mb-4">
+                                <svg width="80" height="80" viewBox="0 0 200 200" class="feature-svg">
+                                    <path d="M40,100 L70,70 L100,130 L130,30 L160,100" stroke="var(--bs-danger)" stroke-width="8" fill="none" stroke-linecap="round" class="pulse-line" />
+                                    <circle cx="100" cy="100" r="60" stroke="var(--bs-info)" stroke-width="8" fill="none" />
+                                    <rect x="80" y="150" width="40" height="10" fill="var(--bs-info)" />
+                                    <rect x="95" y="160" width="10" height="20" fill="var(--bs-info)" />
+                                </svg>
+                            </div>
+                            <h3 class="card-title">Health Monitoring</h3>
+                            <p class="card-text">Real-time tracking of vital signs including temperature and pulse rate for proactive health management.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- GPS Tracking -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card card h-100 border-0">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mb-4">
+                                <svg width="80" height="80" viewBox="0 0 200 200" class="feature-svg">
+                                    <circle cx="100" cy="100" r="40" fill="none" stroke="var(--bs-info)" stroke-width="8" />
+                                    <circle cx="100" cy="100" r="15" fill="var(--bs-info)" />
+                                    <path d="M100,60 L100,40" stroke="var(--bs-info)" stroke-width="6" stroke-linecap="round" />
+                                    <path d="M100,160 L100,140" stroke="var(--bs-info)" stroke-width="6" stroke-linecap="round" />
+                                    <path d="M60,100 L40,100" stroke="var(--bs-info)" stroke-width="6" stroke-linecap="round" />
+                                    <path d="M160,100 L140,100" stroke="var(--bs-info)" stroke-width="6" stroke-linecap="round" />
+                                    <path d="M70,70 L55,55" stroke="var(--bs-info)" stroke-width="6" stroke-linecap="round" />
+                                    <path d="M145,145 L130,130" stroke="var(--bs-info)" stroke-width="6" stroke-linecap="round" />
+                                    <path d="M70,130 L55,145" stroke="var(--bs-info)" stroke-width="6" stroke-linecap="round" />
+                                    <path d="M145,55 L130,70" stroke="var(--bs-info)" stroke-width="6" stroke-linecap="round" />
+                                    <circle cx="100" cy="100" r="5" fill="var(--bs-danger)" class="gps-ping" />
+                                </svg>
+                            </div>
+                            <h3 class="card-title">GPS Tracking</h3>
+                            <p class="card-text">Integrated location tracking provides peace of mind for caregivers and ensures quick assistance when needed.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Home Automation -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card card h-100 border-0">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mb-4">
+                                <svg width="80" height="80" viewBox="0 0 200 200" class="feature-svg">
+                                    <path d="M40,100 L100,40 L160,100" stroke="var(--bs-info)" stroke-width="8" fill="none" stroke-linecap="round" />
+                                    <rect x="60" y="100" width="80" height="70" fill="none" stroke="var(--bs-info)" stroke-width="8" />
+                                    <rect x="80" y="120" width="40" height="30" fill="none" stroke="var(--bs-info)" stroke-width="4" class="home-window" />
+                                    <circle cx="165" cy="60" r="20" fill="var(--bs-warning)" class="home-light" />
+                                    <path d="M165,30 C180,20 190,50 170,60" stroke="var(--bs-warning)" stroke-width="3" fill="none" class="wave wave1" />
+                                    <path d="M165,30 C150,20 140,50 160,60" stroke="var(--bs-warning)" stroke-width="3" fill="none" class="wave wave2" />
+                                </svg>
+                            </div>
+                            <h3 class="card-title">Home Automation</h3>
+                            <p class="card-text">Control household devices, lights, and appliances with simple hand gestures for enhanced independence.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- AI Voice Generator -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card card h-100 border-0">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mb-4">
+                                <svg width="80" height="80" viewBox="0 0 200 200" class="feature-svg">
+                                    <rect x="60" y="80" width="80" height="100" rx="10" fill="none" stroke="var(--bs-info)" stroke-width="8" />
+                                    <circle cx="100" cy="60" r="30" fill="none" stroke="var(--bs-info)" stroke-width="8" />
+                                    <path d="M80,140 L120,140" stroke="var(--bs-info)" stroke-width="6" stroke-linecap="round" class="voice-line" />
+                                    <path d="M70,120 L130,120" stroke="var(--bs-info)" stroke-width="6" stroke-linecap="round" class="voice-line" />
+                                    <path d="M90,160 L110,160" stroke="var(--bs-info)" stroke-width="6" stroke-linecap="round" class="voice-line" />
+                                </svg>
+                            </div>
+                            <h3 class="card-title">AI Voice Generator</h3>
+                            <p class="card-text">Convert gestures to natural speech, enabling non-verbal users to communicate effectively with others.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Emergency Alerts -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card card h-100 border-0">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mb-4">
+                                <svg width="80" height="80" viewBox="0 0 200 200" class="feature-svg">
+                                    <polygon points="100,40 160,160 40,160" fill="none" stroke="var(--bs-danger)" stroke-width="8" class="alert-triangle" />
+                                    <line x1="100" y1="80" x2="100" y2="120" stroke="var(--bs-danger)" stroke-width="10" stroke-linecap="round" />
+                                    <circle cx="100" cy="140" r="8" fill="var(--bs-danger)" />
+                                    <path d="M180,100 A80,80 0 0,1 100,180" stroke="var(--bs-info)" stroke-width="6" stroke-linecap="round" fill="none" class="signal1" />
+                                    <path d="M160,100 A60,60 0 0,1 100,160" stroke="var(--bs-info)" stroke-width="6" stroke-linecap="round" fill="none" class="signal2" />
+                                    <path d="M140,100 A40,40 0 0,1 100,140" stroke="var(--bs-info)" stroke-width="6" stroke-linecap="round" fill="none" class="signal3" />
+                                </svg>
+                            </div>
+                            <h3 class="card-title">Emergency Alerts</h3>
+                            <p class="card-text">Immediate distress signal capability connecting users to emergency services and designated caregivers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Groups Section -->
+    <section id="users" class="user-groups py-5 bg-dark">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="display-5 fw-bold">Who Benefits</h2>
+                <p class="lead">NEUROGLOVE is designed to assist various groups with different needs</p>
+            </div>
+            <div class="row g-4">
+                <!-- Elderly -->
+                <div class="col-md-4">
+                    <div class="user-card card h-100 border-0">
+                        <div class="card-body p-4">
+                            <div class="user-icon mb-3">
+                                <i class="fas fa-user-friends fa-3x text-info"></i>
+                            </div>
+                            <h3 class="card-title">Elderly</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Health vitals monitoring</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Fall detection and alerts</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Simplified home control</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Medication reminders</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> Emergency assistance</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Stroke Patients -->
+                <div class="col-md-4">
+                    <div class="user-card card h-100 border-0">
+                        <div class="card-body p-4">
+                            <div class="user-icon mb-3">
+                                <i class="fas fa-heartbeat fa-3x text-info"></i>
+                            </div>
+                            <h3 class="card-title">Stroke Patients</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Rehabilitation assistance</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Speech alternative</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Motor function support</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Progress tracking</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> Communication aid</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Disabled Individuals -->
+                <div class="col-md-4">
+                    <div class="user-card card h-100 border-0">
+                        <div class="card-body p-4">
+                            <div class="user-icon mb-3">
+                                <i class="fas fa-wheelchair fa-3x text-info"></i>
+                            </div>
+                            <h3 class="card-title">Disabled Individuals</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Enhanced independence</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Voice generation</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Smart home integration</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Location monitoring</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> Digital world access</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="demo py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="display-5 fw-bold">Interactive Demo</h2>
+                <p class="lead">Experience the power of NEUROGLOVE through our interactive demonstrations</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Voice Generator -->
+                <div class="col-lg-6 mb-4">
+                    <div class="demo-card card h-100 border-0">
+                        <div class="card-body p-4">
+                            <h3 class="card-title mb-3">AI Voice Generator</h3>
+                            <p class="card-text">Experience how NEUROGLOVE can convert hand gestures into spoken words.</p>
+                            <div class="voice-demo p-3 bg-dark rounded mb-3">
+                                <div class="gesture-display mb-3">
+                                    <div class="current-gesture text-center p-2 bg-info bg-opacity-25 rounded">
+                                        <i class="fas fa-hand-paper fa-2x me-2"></i>
+                                        <span id="gesture-text">No gesture detected</span>
+                                    </div>
+                                </div>
+                                <div class="voice-controls d-flex justify-content-between align-items-center">
+                                    <select id="voice-command" class="form-select me-2">
+                                        <option value="">Select a gesture command</option>
+                                        <option value="Hello, how are you?">Wave - Greeting</option>
+                                        <option value="I need help please.">Fist - Need assistance</option>
+                                        <option value="Please call a doctor.">Point - Medical help</option>
+                                        <option value="I'm feeling good today.">Thumbs up - Positive feedback</option>
+                                        <option value="I need water please.">Cup shape - Thirsty</option>
+                                    </select>
+                                    <button id="speak-btn" class="btn btn-info">
+                                        <i class="fas fa-volume-up me-2"></i>Speak
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Health Monitoring -->
+                <div class="col-lg-6 mb-4">
+                    <div class="demo-card card h-100 border-0">
+                        <div class="card-body p-4">
+                            <h3 class="card-title mb-3">Health Monitoring</h3>
+                            <p class="card-text">Real-time visualization of health data captured by NEUROGLOVE sensors.</p>
+                            <div class="health-demo">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="p-3 bg-dark rounded">
+                                            <h5 class="text-center mb-3">Temperature</h5>
+                                            <canvas id="temperatureChart" height="150"></canvas>
+                                            <div class="current-reading text-center mt-2">
+                                                <span class="reading-value fw-bold" id="temp-value">36.6°C</span>
+                                                <span class="reading-status text-success ms-2">
+                                                    <i class="fas fa-check-circle"></i> Normal
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="p-3 bg-dark rounded">
+                                            <h5 class="text-center mb-3">Pulse Rate</h5>
+                                            <canvas id="pulseChart" height="150"></canvas>
+                                            <div class="current-reading text-center mt-2">
+                                                <span class="reading-value fw-bold" id="pulse-value">75 BPM</span>
+                                                <span class="reading-status text-success ms-2">
+                                                    <i class="fas fa-check-circle"></i> Normal
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gesture Control Demo -->
+                <div class="col-lg-6 mb-4">
+                    <div class="demo-card card h-100 border-0">
+                        <div class="card-body p-4">
+                            <h3 class="card-title mb-3">Gesture Control</h3>
+                            <p class="card-text">Try different gestures to control smart home elements in this interactive demo.</p>
+                            <div class="gesture-demo p-3 bg-dark rounded">
+                                <div class="row mb-3">
+                                    <div class="col-12 text-center">
+                                        <div class="gesture-instruction mb-2">
+                                            <span class="badge bg-info mb-1">Select a gesture to perform</span>
+                                        </div>
+                                        <div class="gesture-options mb-3">
+                                            <button class="btn btn-sm btn-outline-light me-2 mb-2 gesture-btn" data-action="light">
+                                                <i class="fas fa-lightbulb me-1"></i> Toggle Light
+                                            </button>
+                                            <button class="btn btn-sm btn-outline-light me-2 mb-2 gesture-btn" data-action="thermostat">
+                                                <i class="fas fa-temperature-high me-1"></i> Adjust Thermostat
+                                            </button>
+                                            <button class="btn btn-sm btn-outline-light me-2 mb-2 gesture-btn" data-action="tv">
+                                                <i class="fas fa-tv me-1"></i> Control TV
+                                            </button>
+                                            <button class="btn btn-sm btn-outline-light me-2 mb-2 gesture-btn" data-action="blinds">
+                                                <i class="fas fa-blinds me-1"></i> Window Blinds
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="home-simulation bg-dark p-3 rounded position-relative" style="height: 200px; border: 1px solid var(--bs-secondary);">
+                                    <!-- Room elements -->
+                                    <div id="light" class="home-element position-absolute top-0 start-0 m-3">
+                                        <i class="fas fa-lightbulb fa-2x text-secondary"></i>
+                                    </div>
+                                    <div id="thermostat" class="home-element position-absolute top-0 end-0 m-3">
+                                        <span class="d-inline-block text-center">
+                                            <i class="fas fa-temperature-high fa-2x text-secondary"></i>
+                                            <div class="temperature-display mt-1">21°C</div>
+                                        </span>
+                                    </div>
+                                    <div id="tv" class="home-element position-absolute bottom-0 start-0 m-3">
+                                        <i class="fas fa-tv fa-2x text-secondary"></i>
+                                    </div>
+                                    <div id="blinds" class="home-element position-absolute bottom-0 end-0 m-3">
+                                        <i class="fas fa-blinds fa-2x text-secondary"></i>
+                                    </div>
+                                    <!-- Hand indicator for gesture -->
+                                    <div id="hand-indicator" class="position-absolute" style="top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                                        <i class="fas fa-hand-paper fa-3x text-info opacity-50"></i>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-3">
+                                    <div id="gesture-feedback" class="text-info">Perform a gesture to control your smart home</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- GPS Tracking Demo -->
+                <div class="col-lg-6 mb-4">
+                    <div class="demo-card card h-100 border-0">
+                        <div class="card-body p-4">
+                            <h3 class="card-title mb-3">GPS Tracking</h3>
+                            <p class="card-text">See how NEUROGLOVE provides real-time location tracking and safe zone alerts.</p>
+                            <div class="gps-demo p-3 bg-dark rounded">
+                                <div class="map-container mb-3 position-relative" style="height: 250px; border-radius: 8px; overflow: hidden;">
+                                    <div id="map" class="position-relative bg-dark" style="height: 100%; width: 100%;">
+                                        <!-- Simplified map representation -->
+                                        <svg width="100%" height="100%" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid meet">
+                                            <!-- Map grid -->
+                                            <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+                                                <path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+                                            </pattern>
+                                            <rect width="100%" height="100%" fill="url(#grid)" />
+                                            
+                                            <!-- Map roads -->
+                                            <line x1="150" y1="0" x2="150" y2="400" stroke="rgba(255,255,255,0.3)" stroke-width="10" />
+                                            <line x1="300" y1="0" x2="300" y2="400" stroke="rgba(255,255,255,0.3)" stroke-width="15" />
+                                            <line x1="450" y1="0" x2="450" y2="400" stroke="rgba(255,255,255,0.3)" stroke-width="10" />
+                                            <line x1="0" y1="100" x2="600" y2="100" stroke="rgba(255,255,255,0.3)" stroke-width="10" />
+                                            <line x1="0" y1="250" x2="600" y2="250" stroke="rgba(255,255,255,0.3)" stroke-width="15" />
+                                            
+                                            <!-- Safe zone -->
+                                            <circle cx="300" cy="200" r="100" fill="rgba(25, 135, 84, 0.2)" stroke="var(--bs-success)" stroke-width="3" stroke-dasharray="10,5" />
+                                            
+                                            <!-- Current location -->
+                                            <circle id="location-marker" cx="300" cy="200" r="10" fill="var(--bs-info)" stroke="white" stroke-width="2">
+                                                <animate attributeName="r" values="10;15;10" dur="2s" repeatCount="indefinite" />
+                                            </circle>
+                                            
+                                            <!-- Location history trail -->
+                                            <path id="location-trail" d="M300,200 L320,180 L330,210 L350,190" fill="none" stroke="var(--bs-info)" stroke-width="3" stroke-dasharray="5,5" />
+                                        </svg>
+                                    </div>
+                                    <div class="controls position-absolute bottom-0 end-0 p-2">
+                                        <button id="zoom-in" class="btn btn-sm btn-dark me-1"><i class="fas fa-plus"></i></button>
+                                        <button id="zoom-out" class="btn btn-sm btn-dark"><i class="fas fa-minus"></i></button>
+                                    </div>
+                                </div>
+                                
+                                <div class="location-info bg-dark bg-opacity-50 p-3 rounded">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <i class="fas fa-map-marker-alt text-danger me-2"></i>
+                                                <div>Current Location: <span id="current-location">Home</span></div>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <i class="fas fa-shield-alt text-success me-2"></i>
+                                                <div>Status: <span id="location-status" class="text-success">Within safe zone</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <i class="fas fa-clock text-info me-2"></i>
+                                                <div>Last Updated: <span id="last-updated">Just now</span></div>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <i class="fas fa-battery-three-quarters text-warning me-2"></i>
+                                                <div>Battery: <span id="battery-level">85%</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call To Action -->
+    <section class="cta py-5 bg-info bg-opacity-10">
+        <div class="container text-center">
+            <h2 class="display-5 fw-bold mb-4">Ready to Experience NEUROGLOVE?</h2>
+            <p class="lead mb-4">Join the future of assistive technology and enhance independence for those who need it most.</p>
+            <div class="cta-buttons">
+                <button class="btn btn-lg btn-info me-3">Request a Demo</button>
+                <button class="btn btn-lg btn-outline-light">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="display-5 fw-bold">Get In Touch</h2>
+                <p class="lead">Have questions about NEUROGLOVE? Contact our team for more information.</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-6">
+                    <div class="contact-form card border-0">
+                        <div class="card-body p-4">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Your Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <select class="form-select" id="subject">
+                                        <option selected>Select an option</option>
+                                        <option value="general">General Inquiry</option>
+                                        <option value="demo">Request a Demo</option>
+                                        <option value="support">Technical Support</option>
+                                        <option value="partnership">Partnership Opportunity</option>
+                                    </select>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-info w-100">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact-info card h-100 border-0">
+                        <div class="card-body p-4">
+                            <h3 class="card-title mb-4">Contact Information</h3>
+                            <div class="info-item d-flex align-items-center mb-3">
+                                <div class="icon me-3">
+                                    <i class="fas fa-map-marker-alt fa-2x text-info"></i>
+                                </div>
+                                <div class="text">
+                                    <h5 class="mb-0">Address</h5>
+                                    <p class="mb-0">123 Innovation Avenue, Tech City, TC 10101</p>
+                                </div>
+                            </div>
+                            <div class="info-item d-flex align-items-center mb-3">
+                                <div class="icon me-3">
+                                    <i class="fas fa-phone fa-2x text-info"></i>
+                                </div>
+                                <div class="text">
+                                    <h5 class="mb-0">Phone</h5>
+                                    <p class="mb-0">+91 8904024081</p>
+                                </div>
+                            </div>
+                            <div class="info-item d-flex align-items-center mb-3">
+                                <div class="icon me-3">
+                                    <i class="fas fa-envelope fa-2x text-info"></i>
+                                </div>
+                                <div class="text">
+                                    <h5 class="mb-0">Email</h5>
+                                    <p class="mb-0">prajwalp1875@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="social-links mt-4">
+                                <h5 class="mb-3">Follow Us</h5>
+                                <div class="d-flex">
+                                    <a href="#" class="btn btn-outline-info me-2"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="btn btn-outline-info me-2"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="btn btn-outline-info me-2"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" class="btn btn-outline-info"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4 bg-dark">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    <a class="navbar-brand d-flex align-items-center justify-content-center justify-content-md-start" href="#">
+                        <svg class="logo me-2" width="30" height="30" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="var(--bs-info)" stroke-width="8"></circle>
+                            <path d="M30,50 Q50,20 70,50" stroke="var(--bs-info)" stroke-width="8" fill="none"></path>
+                            <circle cx="50" cy="50" r="10" fill="var(--bs-info)"></circle>
+                        </svg>
+                        <span class="fw-bold">NEUROGLOVE</span>
+                    </a>
+                </div>
+                <div class="col-md-4 text-center mb-3 mb-md-0">
+                    <ul class="footer-links list-inline mb-0">
+                        <li class="list-inline-item"><a href="#hero">Home</a></li>
+                        <li class="list-inline-item"><a href="#features">Features</a></li>
+                        <li class="list-inline-item"><a href="#users">Users</a></li>
+                        <li class="list-inline-item"><a href="#demo">Demo</a></li>
+                        <li class="list-inline-item"><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <p class="mb-0">&copy; 2025 NEUROGLOVE. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/voice.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/health.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/gesture.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/map.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/automation.js') }}"></script>
+</body>
+</html>

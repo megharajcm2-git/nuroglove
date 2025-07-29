@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <path d="M40,100 L100,40 L160,100" stroke="#0dcaf0" stroke-width="8" fill="none" stroke-linecap="round" />
+  <rect x="60" y="100" width="80" height="70" fill="none" stroke="#0dcaf0" stroke-width="8" />
+  <rect x="80" y="120" width="40" height="30" fill="none" stroke="#0dcaf0" stroke-width="4" class="home-window" />
+  <circle cx="165" cy="60" r="20" fill="#ffc107" class="home-light" />
+  <path d="M165,30 C180,20 190,50 170,60" stroke="#ffc107" stroke-width="3" fill="none" class="wave wave1" />
+  <path d="M165,30 C150,20 140,50 160,60" stroke="#ffc107" stroke-width="3" fill="none" class="wave wave2" />
+</svg>
